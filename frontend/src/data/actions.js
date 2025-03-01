@@ -18,8 +18,10 @@ export const ACTIONS = {
     DECREASE_ELECTRICITY: "decrease_electricity",
 
     SET_HAS_EVENT: "set_has_event",
-    SET_EVENT_TYPE: "set_event_type",
+    SET_EVENT_DESCRIPTION: "set_event_description",
     SET_EVENT_IMAGE: "set_event_image",
+    SET_EVENT_IS_BAD: "set_event_is_bad",
+    SET_EVENT_CHOICES: "set_event_choices",
 
     SET_ITEMS_FOR_SALE: "set_items_for_sale",
     SET_USER_INPUT_OPTIONS: "set_user_input_options", 

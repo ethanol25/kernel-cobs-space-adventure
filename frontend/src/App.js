@@ -11,8 +11,8 @@ function App() {
 
   return (
     <>
-      {isStarting ? <StartPopup setIsStarting={setIsStarting}/> : null}
-      <GameDisplay state={state} dispatch={dispatch} setIsStarting={setIsStarting} />
+      {/* {isStarting ? <StartPopup setIsStarting={setIsStarting}/> : null} */}
+      <GameDisplay state={state} dispatch={dispatch} />
     </>
   );
 }
