@@ -52,13 +52,12 @@ button {
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: black;
+  overflow: scroll;
 }
 
 .start-popup-screen-text {
   font-size: var(--font-medium);
   /* line-height: 15px; */
-  height: 450px;
-  overflow: scroll;
   
 }
 

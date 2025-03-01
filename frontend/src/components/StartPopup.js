@@ -47,6 +47,7 @@ const StartPopup = ({setIsStarting}) => {
         {
           "user": "Unknown",
           "content": "You are Kernel Cob, captain of 'The Cob'. It is your mission to get to Cornelious to deliever the ship's kernels! You will face many threats, but don't worry because you have an experienced AI crew! Good Luck Kernel!"
+          + "You are Kernel Cob, captain of 'The Cob'. It is your mission to get to Cornelious to deliever the ship's kernels! You will face many threats, but don't worry because you have an experienced AI crew! Good Luck Kernel!"
         }
       ])
       setChoices([
