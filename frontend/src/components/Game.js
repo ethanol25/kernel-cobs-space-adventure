@@ -24,7 +24,8 @@ const Game = () => {
 
         this.background = new Background(this);//space image
         this.player = new Player(this);//spaceship
-        this.input = new InputHandler();
+        this.input = new InputHandler(this);
+        this.debug = true;
 
         //asteroids
         this.asteroids = [];
@@ -41,11 +42,8 @@ const Game = () => {
       update(deltaTime) {
         this.background.update();
         this.player.update(this.input.keys);
-        this.asteroids.forEach(asteroid => asteroid.update());
 
-        //remove off screen asteroid
-        this.asteroids = this.asteroids.filter(asteroid => asteroid.x + asteroid.width > 0);
-
+        //handle asteroids
         //if time for new asteroid, add new asteroid
         if (this.asteroidTimer > this.asteroidInterval && this.asteroids.length < this.asteroidLimit) {
           this.asteroids.push(new Asteroid(this));
@@ -54,9 +52,15 @@ const Game = () => {
           this.asteroidTimer += deltaTime;
         }
 
+        this.asteroids.forEach(asteroid => {
+          asteroid.update();
+          if (asteroid.markedForDeletion) this.asteroids.splice(this.asteroids.indexOf(asteroid), 1);
+        })
+
       }
 
       draw(context) {
+
         this.background.draw(context);
         this.player.draw(context);
         this.asteroids.forEach(asteroid => asteroid.draw(context));

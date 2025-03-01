@@ -11,6 +11,8 @@ class Layer {
         this.x = 0;
         this.y = 0;
     }
+
+    //fix later, right now it is not updating right. i should not need 4 of the same damn images
     update() {
         this.x -= this.game.speed * this.speedModifier;
         if (this.x <= -this.width) {
