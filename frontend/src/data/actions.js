@@ -1,4 +1,7 @@
 export const ACTIONS = {
+    ADD_DISTANCE: "add_distance",
+    DECREASE_DISTANCE: "decrease_distance",
+
     ADD_KERNELS: "add_kernels",
     DECREASE_KERNELS: "decrease_kernels",
 

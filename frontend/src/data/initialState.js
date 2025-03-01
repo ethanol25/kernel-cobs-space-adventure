@@ -1,4 +1,5 @@
 const initialState = {
+    distance: 600,
     kernels: 200,
     fuel: 200,
     water: 200,
