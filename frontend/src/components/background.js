@@ -21,6 +21,7 @@ class Layer {
         context.drawImage(this.image, this.x, this.y, this.width, this.height);
         context.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
         context.drawImage(this.image, this.x + 2 * this.width, this.y, this.width, this.height);
+        context.drawImage(this.image, this.x + 3 * this.width, this.y, this.width, this.height);
 
     }
 }
