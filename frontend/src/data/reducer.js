@@ -20,10 +20,14 @@ const reducer = (state, action) => {
             return ;
         case ACTIONS.SET_HAS_EVENT:
             return ;
-        case ACTIONS.SET_EVENT_TYPE:
+        case ACTIONS.SET_EVENT_DESCRIPTION:
             return ;
         case ACTIONS.SET_EVENT_IMAGE:
             return ;
+        case ACTIONS.SET_EVENT_IS_BAD:
+            return;
+        case ACTIONS.SET_EVENT_CHOICES:
+            return;
         default: 
             return;
     }

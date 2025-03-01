@@ -11,7 +11,7 @@
   --button-gray: #5d5d5d;
 
   /* Font Sizes */
-  --font-small: 15px;
+  --font-small: 20px;
   --font-medium: 30px;
   --font-large: 60px;
   --font-huge: 120px;
@@ -24,6 +24,25 @@
 /* Generic */
 button {
   cursor: pointer;
+  border: 3px solid white;
+  border-radius: 30px;
+  color: var(--celeste-cyan);
+  text-align: left;
+  font-size: var(--font-medium);
+  background-color: var(--button-gray);
+}
+
+p {
+  font-size: var(--font-medium);
+}
+
+h1, h2 {
+  font-size: var(--font-large);
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
 }
 
 /* Start-Popup */
@@ -78,14 +97,57 @@ button {
   max-width: 1100px;
   height: 100px;
   margin: 10px 0px;
-  border: 3px solid white;
-  border-radius: 30px;
-  color: var(--celeste-cyan);
-  text-align: left;
-  font-size: var(--font-medium);
-  background-color: var(--button-gray);
 }
 
 .start-popup-screen-button > p {
   margin-left: 10px;
+}
+
+
+/* Bottom Half of Display */
+.bottom-half {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Input Component */
+.input-container {
+  height: 100%;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #363636;
+
+  text-align: center;
+}
+
+.blank-input-container {
+  height: 100%;
+  width: 30%;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #363636;
+
+  text-align: center;
+}
+
+.input-container > h1 {
+  color: var(--engineering-orange);
+  margin: 0px;
+}
+
+.input-container > p {
+  color: var(--celeste-cyan);
+  overflow: scroll;
+}
+
+.input-container button {
+  padding: 20px;
+  margin: 2px;
+}
+
+.input-button-container {
+  display: flex;
+  flex-direction: column;
 }

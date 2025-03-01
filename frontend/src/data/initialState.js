@@ -6,8 +6,10 @@ const initialState = {
     food: 200,
     electricity: 200,
     hasEvent: false,
-    eventType: "",
+    eventDescription: "An Alien has boarded our cob!",
+    eventChoices: ["Jetison them", "Try to scare them away", "Do Nothing"],
     eventImage: null,
+    eventIsBad: true,
 }
 
 export default initialState;
