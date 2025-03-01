@@ -50,7 +50,7 @@ html, body, #root {
 
 /* Start-Popup */
 
-.start-popup-container {
+.start-popup-container, .popup-container {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -59,7 +59,7 @@ html, body, #root {
   background-color: rgba(0, 0, 0, 0.75);
 }
 
-.start-popup-screen {
+.start-popup-screen, .popup-screen {
   position: absolute;
   width: 50%;
   height: 50%;
@@ -107,6 +107,66 @@ html, body, #root {
 }
 
 
+/* Event Popup */
+.popup-container {
+
+}
+
+.popup-screen {
+  text-align: center;
+}
+
+.popup-screen h1 {
+  font-size: var(--font-huge);
+  margin: 0px;
+}
+
+.popup-screen p {
+  color: white;
+  font-size: var(--font-medium);
+}
+
+.popup-top-part {
+  height: 80%;
+  padding-top: 10px;
+  overflow-y: scroll;
+}
+
+.popup-screen-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.popup-screen-header img {
+  height: 100%;
+}
+
+.popup-good-event {
+  color: var(--malachite-green);
+}
+
+.popup-bad-event {
+  color: var(--engineering-orange);
+}
+
+.popup-screen-text {
+  margin: auto;
+}
+
+.popup-screen-button {
+  height: 20%;
+}
+
+.popup-screen-button > button {
+  width: 40%;
+  max-width: 1100px;
+  height: 100px;
+  margin: 10px 0px;
+  text-align: center;
+  font-size: var(--font-medium);
+}
+
 /* Bottom Half of Display */
 .bottom-half {
   height: 50%;
@@ -135,19 +195,26 @@ html, body, #root {
   text-align: center;
 }
 
-.input-container > h1 {
+.input-text {
+  height: 50%;
+  overflow-y: scroll;
+}
+
+.input-container h1 {
   color: var(--engineering-orange);
   margin: 0px;
 }
 
-.input-container > p {
+.input-container p {
   color: var(--celeste-cyan);
   overflow: scroll;
+  margin: 0px;
 }
 
 .input-container button {
   padding: 20px;
   margin: 2px;
+  font-size: var(--font-small);
 }
 
 .input-button-container {

@@ -19,7 +19,10 @@ const reducer = (state, action) => {
         case ACTIONS.DECREASE_ELECTRICITY:
             return ;
         case ACTIONS.SET_HAS_EVENT:
-            return ;
+            return {
+                ...state,
+                hasEvent: action.payload,
+              };
         case ACTIONS.SET_EVENT_DESCRIPTION:
             return ;
         case ACTIONS.SET_EVENT_IMAGE:

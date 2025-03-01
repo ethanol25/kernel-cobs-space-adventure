@@ -1,7 +1,6 @@
 import React from 'react'
 
 const Input = ({state, dispatch}) => {
-    console.log(state);
     if (!state.hasEvent) {
         return <div className="blank-input-container">
 
@@ -9,9 +8,10 @@ const Input = ({state, dispatch}) => {
     } else {
         return (
         <div className="input-container">
-            
-            <h1>ALERT:</h1>
-            <p>{state.eventDescription}</p>
+            <div className='input-text'>
+                <h1>ALERT:</h1>
+                <p>{state.eventDescription}</p>
+            </div>
             <div className="input-button-container">
                 {state.eventChoices[0] !== null ? <button>
                     {state.eventChoices[0]}
