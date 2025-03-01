@@ -104,9 +104,7 @@ const Game = () => {
 
 
   return (
-    <div>
-      <canvas id="canvas1"></canvas>
-    </div>
+    <canvas id="canvas1"></canvas>
   )
 }
 

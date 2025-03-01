@@ -1,14 +1,14 @@
 #canvas {
     border: 5px solid black;
-    width: 110vw;
-    height: 50vh; /* Adjust the height as needed */
+    width: 100%;
+    height: 50%; /* Adjust the height as needed */
     display: block;
 }
 
 .canvas-container {
     overflow: hidden; /* Hide the overflow */
-    width: 100vw; /* Set the width to 100% of the viewport width */
-    height: 50vh; /* Set the height to 50% of the viewport height */
+    width: 100%; /* Set the width to 100% of the viewport width */
+    height: 50%; /* Set the height to 50% of the viewport height */
     display: block;
 }
 
