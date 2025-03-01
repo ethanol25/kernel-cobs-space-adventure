@@ -11,6 +11,8 @@ class Layer {
         this.x = 0;
         this.y = 0;
     }
+
+    //fix later, right now it is not updating right. i should not need 4 of the same damn images
     update() {
         this.x -= this.game.speed * this.speedModifier;
         if (this.x <= -this.width) {
@@ -21,7 +23,7 @@ class Layer {
         context.drawImage(this.image, this.x, this.y, this.width, this.height);
         context.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
         context.drawImage(this.image, this.x + 2 * this.width, this.y, this.width, this.height);
-
+        context.drawImage(this.image, this.x + 3 * this.width, this.y, this.width, this.height);
     }
 }
 

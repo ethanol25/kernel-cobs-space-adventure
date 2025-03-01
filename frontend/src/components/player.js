@@ -5,8 +5,8 @@ export class Player {
         this.game = game;
 
         //size of ship
-        this.width = 100;
-        this.height = 75;
+        this.width = 75;
+        this.height = 35;
 
         //offput from left
         this.x = this.game.sideMargin;
@@ -29,6 +29,8 @@ export class Player {
         else if (input.includes('ArrowLeft')) this.speedX = -this.maxSpeed;
         else this.speedX = 0;*/
 
+        this.checkCollision();
+
         if (input.includes('ArrowUp')) this.speedY = -this.maxSpeed;
         else if (input.includes('ArrowDown')) this.speedY = this.maxSpeed;
         else this.speedY = 0;
@@ -47,9 +49,30 @@ export class Player {
         //context.fillRect(this.x, this.y, this.width, this.height);
 
         //maybe sprite sheet later?
+        context.strokeStyle = 'green';
+        if (this.game.debug) context.strokeRect(this.x, this.y, this.width, this.height);
+
+
         if (this.image.complete) {
             context.drawImage(this.image, this.x, this.y, this.width, this.height);
         }
+    }
+    checkCollision() {
+        this.game.asteroids.forEach(asteroid => {
+            if (asteroid.x < this.x + this.width &&
+                asteroid.x + asteroid.width > this.x &&
+                asteroid.y < this.y + this.height &&
+                asteroid.y + asteroid.height > this.y
+            ){
+                //collision
+                asteroid.markedForDeletion = true;
+                //kernel loss
+
+            } else {
+                //no collision
+
+            }
+        })
     }
 
 
