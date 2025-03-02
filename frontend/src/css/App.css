@@ -210,7 +210,7 @@ html, body, #root {
   margin-left: 1%;
 }
 
-.kernalStat {
+.kernelStat {
   font-size:130%;
   text-align: center;
   width:50%;
@@ -219,10 +219,13 @@ html, body, #root {
 .otherStats {
   width:50%;
   padding-left: 8%;
+  display: flex;
+  flex-direction: column;
   /* text-align: center; */
+  justify-content: space-around;
 }
 .otherStats p, span{
-  font-size: 23px;
+  font-size: var(--font-small);
 }
 
 /* Bottom Half of Display */
@@ -252,8 +255,10 @@ html, body, #root {
 }
 
 .input-text {
-  height: 50%;
+  height: 60%;
+  min-height: 250px;
   overflow-y: scroll;
+  margin-bottom: 10px;
 }
 
 .input-container h1 {
@@ -268,7 +273,7 @@ html, body, #root {
 }
 
 .input-container button {
-  padding: 20px;
+  padding: 5px;
   margin: 2px;
   font-size: var(--font-small);
 }
@@ -276,4 +281,6 @@ html, body, #root {
 .input-button-container {
   display: flex;
   flex-direction: column;
+  overflow-y: scroll;
+  min-height: 160px;
 }

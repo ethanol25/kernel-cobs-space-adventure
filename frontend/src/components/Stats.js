@@ -2,23 +2,23 @@ import React, {useState} from 'react'
 
 const FUELFONTCOLOR = "#51DE6B"
 const tempStats = {
-  kernals: 50,
+  kernels: 50,
   fuel: 89,
   food: 20,
   water: 4
   }
 
 const Stats = () => {
-  const [kernals, setKernals] = useState(tempStats.kernals)
+  const [kernels, setKernels] = useState(tempStats.kernels)
   const [fuel, setFuel] = useState(tempStats.fuel)
   const [water, setWater] = useState(tempStats.water)
   const [food, setFood] = useState(tempStats.food)
 
   return (
     <div className="statsWindow">
-      <div className="kernalStat">
-        <p>Kernals</p>
-        <p style={{color:"#D0D87A"}}>{kernals}</p>
+      <div className="kernelStat">
+        <p>Kernels</p>
+        <p style={{color:"#D0D87A"}}>{kernels}</p>
       </div>
       <hr />
       <div className="otherStats">
