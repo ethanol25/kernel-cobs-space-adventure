@@ -20,17 +20,18 @@ const Game = () => {
         this.width = width;
         this.height = height;
         this.sideMargin = 70; //offset from left
-        this.speed = 2; //general game speed, adds modifier to most classes
+        this.velocityX = 1; //general game speed, adds modifier to most classes
+        this.velocityY = 0;
 
         this.background = new Background(this);//space image
         this.player = new Player(this);//spaceship
         this.input = new InputHandler(this);
-        this.debug = true;
+        this.debug = false;
 
         //asteroids
         this.asteroids = [];
         //how often asteroids come
-        this.asteroidInterval = 7000;
+        this.asteroidInterval = 1000;
         this.asteroidTimer = 0;
 
         //asteroid limit, can be adjusted for asteroid field, etc

@@ -16,7 +16,7 @@ export class Asteroid {
         this.markedForDeletion = false;
     }
     update() {
-        this.x -= this.speed + this.game.speed; // move left
+        this.x -= this.speed + this.game.velocityX; // move left
 
         if (this.x + this.width < 0) this.markedForDeletion = true;
     }
