@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useState } from 'react';
+import { useReducer, useState } from 'react';
 import './css/App.css';
 import GameDisplay from './pages/GameDisplay';
 import reducer from './data/reducer';
