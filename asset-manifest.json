@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/kernel-cobs-space-adventure/static/css/main.6ea8d369.css",
+    "main.js": "/kernel-cobs-space-adventure/static/js/main.a5c9b8f5.js",
+    "static/media/stars2.jpg": "/kernel-cobs-space-adventure/static/media/stars2.ce3d161032c7f11208b6.jpg",
+    "static/media/corn.png": "/kernel-cobs-space-adventure/static/media/corn.bbfc2a27b6945d29138b.png",
+    "static/media/asteroid.png": "/kernel-cobs-space-adventure/static/media/asteroid.bfe5e3ca1b6f31af89b3.png",
+    "static/media/crew_closed.png": "/kernel-cobs-space-adventure/static/media/crew_closed.b079ccdce3061b88f409.png",
+    "static/media/ARROW.png": "/kernel-cobs-space-adventure/static/media/ARROW.80e83722fcbab65ccfac.png",
+    "static/media/crew_open.png": "/kernel-cobs-space-adventure/static/media/crew_open.a9aeeaa87bfc83c130ea.png",
+    "index.html": "/kernel-cobs-space-adventure/index.html",
+    "main.6ea8d369.css.map": "/kernel-cobs-space-adventure/static/css/main.6ea8d369.css.map",
+    "main.a5c9b8f5.js.map": "/kernel-cobs-space-adventure/static/js/main.a5c9b8f5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ea8d369.css",
+    "static/js/main.a5c9b8f5.js"
+  ]
+}
