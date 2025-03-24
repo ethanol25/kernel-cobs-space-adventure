@@ -11,17 +11,21 @@ class Layer {
         this.x = 0;
         this.y = 0;
     }
+
     update() {
-        this.x -= this.game.speed * this.speedModifier;
+        this.x -= this.game.velocityX * this.speedModifier;
         if (this.x <= -this.width) {
             this.x += this.width;
+        } else if (this.x >= this.width) {
+            this.x -= this.width;
         }
     }
-    draw(context) {
+    draw(context) {        
+        context.drawImage(this.image, this.x - this.width, this.y, this.width, this.height);
         context.drawImage(this.image, this.x, this.y, this.width, this.height);
         context.drawImage(this.image, this.x + this.width, this.y, this.width, this.height);
         context.drawImage(this.image, this.x + 2 * this.width, this.y, this.width, this.height);
-
+        context.drawImage(this.image, this.x + 3 * this.width, this.y, this.width, this.height);
     }
 }
 

@@ -1,15 +1,19 @@
 const initialState = {
-    distance: 600,
+    distance: 1000,
     kernels: 200,
     fuel: 200,
     water: 200,
     food: 200,
     electricity: 200,
     hasEvent: false,
-    eventDescription: "An Alien has boarded our cob!",
-    eventChoices: ["Jetison them", "Try to scare them away", "Do Nothing"],
+    eventDescription: "",
+    eventChoices: [],
+    eventConsequences: [],
     eventImage: null,
     eventIsBad: true,
+    APIKey: "",
+    model: "gpt-4o",
+    openai: null,
 }
 
 export default initialState;

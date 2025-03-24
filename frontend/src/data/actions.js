@@ -22,7 +22,12 @@ export const ACTIONS = {
     SET_EVENT_IMAGE: "set_event_image",
     SET_EVENT_IS_BAD: "set_event_is_bad",
     SET_EVENT_CHOICES: "set_event_choices",
+    SET_EVENT_CONSEQUENCES: "set_event_consequences",
 
     SET_ITEMS_FOR_SALE: "set_items_for_sale",
     SET_USER_INPUT_OPTIONS: "set_user_input_options", 
+
+    SET_API_KEY: "set_api_key",
+    SET_MODEL: "set_model",
+    SET_OPENAI: "set_openai",
 }

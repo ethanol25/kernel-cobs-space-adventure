@@ -47,6 +47,26 @@ const StartPopup = ({setIsStarting}) => {
         {
           "user": "Unknown",
           "content": "You are Kernel Cob, captain of 'The Cob'. It is your mission to get to Cornelious to deliever the ship's kernels! You will face many threats, but don't worry because you have an experienced AI crew! Good Luck Kernel!"
+        },
+        {
+          "user": "Ethan Dye",
+          "content": "Kernel Corn Cob's Space Adventure was created by Kiera Chan, Jacob Dimmitt, Ethan Dye, and Thomas Schaefer"
+        },
+        {
+          "user": "Ethan Dye",
+          "content": "It was made for Cornhacks 2025, a 24 hour hackathon"
+        },
+        {
+          "user": "Ethan Dye",
+          "content": "Kiera worked on AI prompting, I (ethan) worked on the game loop, Thomas worked on the UI, and Jacob was our 'Flex Position' (did a bit of everything)"
+        },
+        {
+          "user": "Ethan Dye",
+          "content": "We unfortunately didn't complete our grand plans, but here is what we had :)"
+        },
+        {
+          "user": "Ethan Dye",
+          "content": "(I've also polished a bit of the game loop since then)"
         }
       ])
       setChoices([
